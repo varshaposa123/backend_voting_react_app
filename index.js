@@ -9,7 +9,7 @@ const cors = require("cors");
 const app = express();
 
 mongoose.set("strictQuery", true);
-mongoose.connect("mongodb+srv://test:12345@cluster0.gvh79wd.mongodb.net/voting");
+mongoose.connect("mongodb+srv://test:12345@cluster0.gvh79wd.mongodb.net/votin");
 var db = mongoose.connection;
 db.on("open", () => console.log("Connected to DB"));
 db.on("error", () => console.log("Error occurred"));
